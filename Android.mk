@@ -20,4 +20,10 @@ ifeq ($(TARGET_DEVICE),lt01wifi)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
+<<<<<<< HEAD
+=======
+COMMON_LT01_DIRS := audio consumerir liblights libsensors
+include $(foreach common_dirs,$(COMMON_LT01_DIRS),device/samsung/lt013g/$(common_dirs)/Android.mk)
+
+>>>>>>> parent of 5644a5a... Use existing exynos4x12 lights driver
 endif
